@@ -3,85 +3,216 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
     <title>Registro de citas médicas</title>
  </head>
  <body>
-    <form>
-      <h2> Registro de citas médicas</h2>
 
-      <h4>Datos personales </h4>
+   <section class="container">
+      <h2 class="subtitulo"> Registro de citas médicas</h2>
+      <form>
+        <h4>Datos personales </h4>
 
-      <div class="content-input">
-        <label for="nombre-completo">Nombre completo</label>
-        <input type="text" placeholder="Nombre completo" id="nombre-completo" name="nombre-completo" required >
-      </div>
+        <div class="content-input">
+          <label for="nombre-completo">Nombre completo</label>
+          <input type="text" placeholder="Nombre completo" id="nombre-completo" name="nombre-completo" required >
+        </div>
 
-      <div class="content-input">
-        <label for="dui"> DUI</label> 
-        <input type="text" placeholder="DUI" id="dui" name="dui" required>
-    </div>
-    
-    <div class="content-input"> 
-      <label for="fecha-nacimiento">Fecha de nacimiento</label>
-      <input type="text" placeholder="Fecha de nacimiento" id="fecha-nacimiento" name="fecha-nacimiento" required>
-    </div>
+        <div class="content-input">
+          <label for="dui"> DUI</label> 
+          <input type="text" placeholder="DUI" id="dui" name="dui" required>
+        </div>
+      
+        <div class="content-input"> 
+          <label for="fecha-nacimiento">Fecha de nacimiento</label>
+          <input type="text" placeholder="Fecha de nacimiento" id="fecha-nacimiento" name="fecha-nacimiento" required>
+        </div>
 
-    <div class="content-input">
-      <h4>Género</h4>
-      <div class="input-radio">
-        <label for="masculino">Masculino</label>
-        <input type="radio" id="masculino" name="genero" required value="Masculino">
-      </div>
-       
-      <div class="input-radio">
-        <label for="femenino">Femenino</label>
-        <input type="radio" id="femenino" name="genero" required value="Femenino">
-      </div>
-    </div>
+        <div class="content-input">
+          <h4>Género</h4>
+          <div class="input-radio">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" required value="Masculino">
+          </div>
+          
+          <div class="input-radio">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="femenino" name="genero" required value="Femenino">
+          </div>
+        </div>
 
-    <div class="content-input">
-      <label for="tel">Teléfono</label>
-      <input type="text" id="tel" name="telefono" placeholder="teléfono" requiered>
-    </div>
+        <div class="content-input">
+          <label for="tel">Teléfono</label>
+          <input type="text" id="tel" name="telefono" placeholder="teléfono" requiered>
+        </div>
 
-    <div class="content-input">
-      <label for="email">Correo eletrónico</label>
-      <input type="text" name="correo-electrónico" id="email" placeholder="correo-electrónico" required>
-    </div>
+        <div class="content-input">
+          <label for="email">Correo eletrónico</label>
+          <input type="text" name="correo-electrónico" id="email" placeholder="correo-electrónico" required>
+        </div>
 
-    <!-- PONER EN MAYUSCULAS LOS VALUES -->
-    <div class="content-input">
-      <label for="especialidad-medica">Especialidad médica</label>
-      <select name="especialidad-medica" id="especialidad-medica">
-        <option value="pediatria">Pediatría</option>
-        <option value="dermatologa">Dermatología</option>
-        <option value="neurologia">Neurología</option>
-        <option value="psiquiatria">Psiquiatría</option>
-        <option value="Geriatria">Geriatría</option>
-      </select>
-    </div>
+        <!-- PONER EN MAYUSCULAS LOS VALUES -->
+        <div class="content-input">
+          <label for="especialidad-medica">Especialidad médica</label>
+          <select name="especialidad-medica" id="especialidad-medica">
+            <option value="pediatria">Pediatría</option>
+            <option value="dermatologa">Dermatología</option>
+            <option value="neurologia">Neurología</option>
+            <option value="psiquiatria">Psiquiatría</option>
+            <option value="Geriatria">Geriatría</option>
+          </select>
+        </div>
 
-    <div class="content-input">
-      <label for="fecha-cita">Fecha de la cita</label>
-      <input type="date" name="fecha-cita" id="fecha-cita" required>
-    </div>
-    
-    <div class="content-input">
-      <label for="hora-cita">Hora de la cita</label>
-      <input type="time" name="hora-cita" id="hora-cita" required>
-    </div>
-    
-    <div class="content-input">
-      <label for="notas-adicionales">Notas adicionales</label>
-      <textarea name="notas-adicionales" id="notas-adicionales" placeholder="Notas adicionales" required></textarea>
-    </div> 
+        <div class="content-input">
+          <label for="fecha-cita">Fecha de la cita</label>
+          <input type="date" name="fecha-cita" id="fecha-cita" required>
+        </div>
+        
+        <div class="content-input">
+          <label for="hora-cita">Hora de la cita</label>
+          <input type="time" name="hora-cita" id="hora-cita" required>
+        </div>
+        
+        <div class="content-input">
+          <label for="notas-adicionales">Notas adicionales</label>
+          <textarea name="notas-adicionales" id="notas-adicionales" placeholder="Notas adicionales" required></textarea>
+        </div> 
 
-    <div class="content-input">
-      <button type="submit"><b>Enviar</b></button>
-      <button type="reset"><b>Limpiar</b></button>
-    </div>
-    </form>
-    
+        <div class="content-input">
+          <button type="submit"><b>Enviar</b></button>
+          <button type="reset"><b>Limpiar</b></button>
+        </div>
+      </form>
+    </section>
+
+    <section class="container">
+      <h2 class="subtitulo">Listado de citas médicas</h2>
+      <table class="table-citas-medicas">
+        <tr>
+          <th>Imagen del paciente </th>
+          <th>Nombre del paciente</th>
+          <th>Fecha de la cita</th>
+          <th>Hora de la cita</th>
+          <th>Especialidad médica</th>
+          <th>Estado de la cita</th>
+        </tr>
+        <tr>
+          <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+          <td> Jefferson Alejandro Castro Umanzor</td>
+          <td> 31/06/2025</td>
+          <td> 10:00 AM</td> 
+          <td>Pediatría</td>
+          <td>Pendiente</td>
+        </tr>
+
+        <tr>
+          <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+          <td> José Luis Giron Sanchez</td>
+          <td> 24/05/2025</td>
+          <td> 1:30 PM</td> 
+          <td>Dermatología</td>
+          <td>Confirmada</td>
+        </tr>
+
+        <tr> 
+          <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+          <td> Sofia Lissette Hernandez Flores</td>
+          <td> 01/06/2025</td>
+          <td> 9:30 PM</td> 
+          <td>Neurologia</td>
+          <td>Confirmada</td>
+        </tr>
+
+        <tr> 
+          <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+          <td> Maria Jose Martinez Guevara</td>
+          <td> 03/06/2025</td>
+          <td> 11:00 AM</td> 
+          <td>Psiquiatría</td>
+          <td>Pendiente</td>
+          </tr>
+
+          <tr>
+            <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+            <td> Juan Carlos Rodriguez Funes</td>
+            <td> 04/06/2025</td>
+            <td> 12:00 PM</td>
+            <td>Geriatria</td>
+            <td>Cancelada</td>
+          </tr>
+      </table>
+    </section>
+
+    <section class="container-calendario">
+      <h2 class="subtitulo">Calendario de citas médicas</h2>
+
+      <table class="table-calendario-citas"> 
+        <tr class="content-nombre-mes">
+          <th colspan="7">MAYO 2025</th>
+        </tr>
+
+        <tr>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+          <th>Sábado</th>
+          <th>Domingo</th>
+        </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+
+          <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+          </tr>
+
+          <tr>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+          </tr>
+
+          <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
  </body>
  </html>
+

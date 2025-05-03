@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family:"Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(242, 235, 243);
+}
+
+.container {
+    margin: 50px  auto;
+    width: 90%;
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: 30px 30px 30px rgb(215, 205, 216);
+    border-radius: 30px;
+}
+
+
+
+
+.table-citas-medicas {
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+.table-citas-medicas tr{
+    padding: 10px;
+
+}
+
+.table-citas-medicas th{
+    border: 1px solid rgb(160, 160, 160);
+    padding: 10px 10px ;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.table-citas-medicas td{
+    border: 1px solid rgb(160, 160, 160);
+    padding: 0 10px ;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.subtitulo {
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+.paciente-img {
+    width: 100px;
+    aspect-ratio: 2/2;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
