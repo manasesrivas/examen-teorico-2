@@ -7,86 +7,115 @@
 
     <title>Registro de citas médicas</title>
  </head>
- <body>
+<body>
 
-   <section class="container">
+   <section class="container container-registro-citas">
+
       <h2 class="subtitulo"> Registro de citas médicas</h2>
-      <form>
-        <h4>Datos personales </h4>
-
-        <div class="content-input">
-          <label for="nombre-completo">Nombre completo</label>
-          <input type="text" placeholder="Nombre completo" id="nombre-completo" name="nombre-completo" required >
-        </div>
-
-        <div class="content-input">
-          <label for="dui"> DUI</label> 
-          <input type="text" placeholder="DUI" id="dui" name="dui" required>
-        </div>
       
-        <div class="content-input"> 
-          <label for="fecha-nacimiento">Fecha de nacimiento</label>
-          <input type="text" placeholder="Fecha de nacimiento" id="fecha-nacimiento" name="fecha-nacimiento" required>
-        </div>
+      <form>
+        <div class="content-inputs">
+          <div>
+            <h4>Datos personales </h4>
+            <div class="content-input">
+              <label class="label-input" for="nombre-completo">Nombre completo</label>
+              <input class="form-input" type="text" placeholder="Nombre completo" id="nombre-completo" name="nombre-completo" required >
+            </div>
 
-        <div class="content-input">
-          <h4>Género</h4>
-          <div class="input-radio">
-            <label for="masculino">Masculino</label>
-            <input type="radio" id="masculino" name="genero" required value="Masculino">
+            <div class="content-input">
+              <label class="label-input" for="dui">DUI</label> 
+              <input class="form-input" type="text" placeholder="DUI" id="dui" name="dui" required>
+            </div>
+        
           </div>
           
-          <div class="input-radio">
-            <label for="femenino">Femenino</label>
-            <input type="radio" id="femenino" name="genero" required value="Femenino">
+          <div>
+            <h4>Datos demograficos</h4>
+            <div class="content-input"> 
+              <label class="label-input" for="fecha-nacimiento">Fecha de nacimiento</label>
+              <input class="form-date-time" type="date" placeholder="Fecha de nacimiento" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+    
+            <div class="content-input">
+              <h3>Género</h3>
+              <div class="input-radio">
+                <input class="input-genero" type="radio" id="masculino" name="genero" required value="Masculino">
+                <label class="label-genero" for="masculino">Masculino</label>
+              </div>
+              
+              <div class="input-radio">
+                <input class="input-genero" type="radio" id="femenino" name="genero" required value="Femenino">
+                <label class="label-genero" for="femenino">Femenino</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle">
+            <h4>Datos de contacto</h4>
+            
+            <div class="content-input">
+              <label class="label-input" for="tel">Teléfono</label>
+              <input class="form-input" type="text" id="tel" name="telefono" placeholder="teléfono" requiered>
+            </div>
+  
+            <div class="content-input">
+              <label class="label-input" for="email">Correo eletrónico</label>
+              <input class="form-input" type="text" name="correo-electrónico" id="email" placeholder="correo-electrónico" required>
+            </div>
           </div>
         </div>
 
-        <div class="content-input">
-          <label for="tel">Teléfono</label>
-          <input type="text" id="tel" name="telefono" placeholder="teléfono" requiered>
-        </div>
-
-        <div class="content-input">
-          <label for="email">Correo eletrónico</label>
-          <input type="text" name="correo-electrónico" id="email" placeholder="correo-electrónico" required>
-        </div>
-
-        <!-- PONER EN MAYUSCULAS LOS VALUES -->
-        <div class="content-input">
-          <label for="especialidad-medica">Especialidad médica</label>
-          <select name="especialidad-medica" id="especialidad-medica">
-            <option value="pediatria">Pediatría</option>
-            <option value="dermatologa">Dermatología</option>
-            <option value="neurologia">Neurología</option>
-            <option value="psiquiatria">Psiquiatría</option>
-            <option value="Geriatria">Geriatría</option>
-          </select>
-        </div>
-
-        <div class="content-input">
-          <label for="fecha-cita">Fecha de la cita</label>
-          <input type="date" name="fecha-cita" id="fecha-cita" required>
-        </div>
         
-        <div class="content-input">
-          <label for="hora-cita">Hora de la cita</label>
-          <input type="time" name="hora-cita" id="hora-cita" required>
-        </div>
-        
-        <div class="content-input">
-          <label for="notas-adicionales">Notas adicionales</label>
-          <textarea name="notas-adicionales" id="notas-adicionales" placeholder="Notas adicionales" required></textarea>
-        </div> 
+      
+        <h4>Datos de la cita</h4>
+        <div class="content-inputs">
+          <div>
+            <div class="content-input">
+              <label class="label-input" for="especialidad-medica">Especialidad médica</label>
+              <select class="select-especialidad-medica" name="especialidad-medica" id="especialidad-medica">
+                <option value="pediatria">Pediatría</option>
+                <option value="dermatologa">Dermatología</option>
+                <option value="neurologia">Neurología</option>
+                <option value="psiquiatria">Psiquiatría</option>
+                <option value="Geriatria">Geriatría</option>
+              </select>
+            </div>
+    
+            <div class="content-input">
+              <label class="label-input" for="fecha-cita">Fecha de la cita</label>
+              <input class="form-date-time" type="date" name="fecha-cita" id="fecha-cita" required>
+            </div>
+          </div>
 
-        <div class="content-input">
-          <button type="submit"><b>Enviar</b></button>
-          <button type="reset"><b>Limpiar</b></button>
+          <div>
+            <div>
+              <div class="content-input">
+                <label class="label-input" for="hora-cita">Hora de la cita</label>
+                <input class="form-date-time" type="time" name="hora-cita" id="hora-cita" required>
+              </div>
+              
+              <div class="content-input">
+                <label class="label-input" for="notas-adicionales">Notas adicionales</label>
+                <textarea name="notas-adicionales" id="notas-adicionales" placeholder="Notas adicionales" rows="3" required></textarea>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <div class="content-buttons">
+          <button type="submit">
+            <b>Enviar</b>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1792 1792"><path fill="#f2f2f2" d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45q-14 8-31 8q-11 0-24-5l-453-185l-242 295q-18 23-49 23q-13 0-22-4q-19-7-30.5-23.5T640 1728v-349l864-1059l-1069 925l-395-162q-37-14-40-55q-2-40 32-59L1696 9q15-9 32-9q20 0 36 11"/></svg>
+          </button>
+          <button type="reset">
+            <b>Limpiar</b>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><defs><mask id="ipTClearFormat0"><g fill="none" stroke="#fff"><path fill="#555555" stroke-linejoin="round" stroke-width="4.302" d="M44.782 24.17L31.918 7.1L14.135 20.5L27.5 37l3.356-2.336z"/><path stroke-linejoin="round" stroke-width="4.302" d="m27.5 37l-3.839 3.075l-10.563-.001l-2.6-3.45l-6.433-8.536L14.5 20.225"/><path stroke-linecap="round" stroke-width="4.5" d="M13.206 40.072h31.36"/></g></mask></defs><path fill="#f2f2f2" d="M0 0h48v48H0z" mask="url(#ipTClearFormat0)"/></svg>
+          </button>
         </div>
       </form>
     </section>
 
-    <section class="container">
+    <section class="container container-citas">
       <h2 class="subtitulo">Listado de citas médicas</h2>
       <table class="table-citas-medicas">
         <tr>
@@ -107,7 +136,7 @@
         </tr>
 
         <tr>
-          <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+          <td> <img src="pacientes/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" class="paciente-img" alt=""> </td>
           <td> José Luis Giron Sanchez</td>
           <td> 24/05/2025</td>
           <td> 1:30 PM</td> 
@@ -116,7 +145,7 @@
         </tr>
 
         <tr> 
-          <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+          <td> <img src="pacientes/jurica-koletic-7YVZYZeITc8-unsplash.jpg" class="paciente-img" alt=""> </td>
           <td> Sofia Lissette Hernandez Flores</td>
           <td> 01/06/2025</td>
           <td> 9:30 PM</td> 
@@ -125,7 +154,7 @@
         </tr>
 
         <tr> 
-          <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+          <td> <img src="pacientes/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg" class="paciente-img" alt=""> </td>
           <td> Maria Jose Martinez Guevara</td>
           <td> 03/06/2025</td>
           <td> 11:00 AM</td> 
@@ -134,7 +163,7 @@
           </tr>
 
           <tr>
-            <td> <img src="pacientes/diego-hernandez-MSepzbKFz10-unsplash.jpg" class="paciente-img" alt=""> </td>
+            <td> <img src="pacientes/stefan-stefancik-QXevDflbl8A-unsplash.jpg" class="paciente-img" alt=""> </td>
             <td> Juan Carlos Rodriguez Funes</td>
             <td> 04/06/2025</td>
             <td> 12:00 PM</td>
@@ -144,75 +173,75 @@
       </table>
     </section>
 
-    <section class="container-calendario">
+    <section class="container container-calendario">
       <h2 class="subtitulo">Calendario de citas médicas</h2>
 
-      <table class="table-calendario-citas"> 
+      <table class="table-calendario"> 
         <tr class="content-nombre-mes">
-          <th colspan="7">MAYO 2025</th>
+          <th class="nombre-mes" colspan="7">MAYO 2025</th>
         </tr>
 
         <tr>
-          <th>Lunes</th>
-          <th>Martes</th>
-          <th>Miércoles</th>
-          <th>Jueves</th>
-          <th>Viernes</th>
-          <th>Sábado</th>
-          <th>Domingo</th>
+          <th class="dias">Lunes</th>
+          <th class="dias">Martes</th>
+          <th class="dias">Miércoles</th>
+          <th class="dias">Jueves</th>
+          <th class="dias">Viernes</th>
+          <th class="dias">Sábado</th>
+          <th class="dias">Domingo</th>
         </tr>
 
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-          </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
 
-          <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-          </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+        </tr>
 
-          <tr>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-          </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
 
-          <tr>
-            <td>19</td>
-            <td>20</td>
-            <td>21</td>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-          </tr>
+        <tr>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+        </tr>
 
-          <tr>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-            <td>29</td>
-            <td>30</td>
-            <td>31</td>
-            <td></td>
-          </tr>
-        </table>
-      </section>
+        <tr>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
  </body>
  </html>
 
